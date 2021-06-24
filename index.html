@@ -8,7 +8,19 @@
     <title>Js Basics</title>
   </head>
   <body>
-    <div class="container">Hello</div>
+    <div class="container">
+      <h1>Shadow dom demo</h1>
+      <div>
+        <label for="cvc"
+          >Enter your CVC
+          <popup-info
+            img="images/alt.png"
+            data-text="Your card validation code (CVC) is an extra security feature — it is the last 3 or 4 numbers on the back of your card."
+          ></popup-info
+        ></label>
+        <input type="text" id="cvc" />
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
