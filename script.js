@@ -1,10 +1,14 @@
-// Connection to a broadcast channel
-const bc = new BroadcastChannel("test_channel");
-
-// Example of sending of a very simple message
-bc.postMessage("This is a test message.");
-
-// A handler that only logs the event to the console:
-bc.onmessage = function (ev) {
-  console.log(ev);
+window.onstorage = () => {
+  // When local storage changes, dump the list to
+  // the console.
+  console.log("localstorge eventllll");
+  console.log(window.localStorage.getItem("name"));
+  //alert(window.localStorage.getItem("name"));
 };
+const form = document.querySelector("form");
+const fieldValue = document.querySelector("#name");
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  localStorage.setItem("name", fieldValue.value);
+});
