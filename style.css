@@ -1,3 +1,29 @@
 .container {
-  margin: 2em;
+  position: relative;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+}
+.item {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+}
+
+.prev {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 10px;
+  top: 200px;
+  z-index: 500;
+}
+
+.next {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  right: 10px;
+  top: 200px;
+  z-index: 500;
 }
