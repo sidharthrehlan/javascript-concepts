@@ -1,0 +1,19 @@
+{
+  "name": "javascript-concepts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "betterSlider.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sidharthrehlan/javascript-concepts.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sidharthrehlan/javascript-concepts/issues"
+  },
+  "homepage": "https://github.com/sidharthrehlan/javascript-concepts#readme"
+}

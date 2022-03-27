@@ -1,3 +1,19 @@
-.container {
-  margin: 2em;
+.card {
+  width: 20%;
+  padding: 10px;
+  box-sizing: border-box;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-image {
+  max-width: 100px;
 }

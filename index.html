@@ -5,10 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Js Basics</title>
+    <title>Swiggy</title>
   </head>
   <body>
-    <div class="container">Hello</div>
+    <header>
+      <h1>Swiggy Restaurant Search App</h1>
+      <div class="search-box">
+        <input type="text" name="search-text" id="search-box" />
+        <input type="button" id="search-btn" value="Search" />
+        <input type="button" id="reset-btn" value="Reset" />
+      </div>
+      <div class="filter-box">
+        <select name="sortBy" id="sort-by">
+          <option value="name">Name</option>
+          <option value="distance">Distance</option>
+        </select>
+      </div>
+    </header>
+    <main class="main-content" id="main-content"></main>
+
+    <footer></footer>
     <script src="script.js"></script>
   </body>
 </html>
