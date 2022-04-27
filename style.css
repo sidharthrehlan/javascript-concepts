@@ -1,3 +1,39 @@
 .container {
-  margin: 2em;
+  display: flex-box;
+  flex-direction: column;
+}
+#id {
+  display: inline;
+}
+table,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+#fn {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+#list {
+  margin-bottom: 20px;
+}
+#goal {
+  margin-bottom: 20px;
+  margin-right: 30px;
+}
+button {
+  gap: 800px;
+}
+.name {
+  width: 50%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.row {
+  display: flex;
+}
+.userForm {
+  display: flex;
+  flex-direction: column;
 }

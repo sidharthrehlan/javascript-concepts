@@ -1,14 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Js Basics</title>
+    <title>form</title>
+    <link href="style.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="container">Hello</div>
-    <script src="script.js"></script>
+    <div class="container">
+      <form class="userForm">
+        <div class="row">
+          <div class="name">
+            <label>First Name</label>
+            <input type="text" name=" " id="fn" />
+          </div>
+          <div class="name">
+            <label>Last Name</label>
+            <input type="text" name=" " id="ln" />
+          </div>
+        </div>
+        <label>Occupation</label>
+        <select id="list">
+          <option value="Web developer">Web developer</option>
+          <option value="Teacher">Teacher</option>
+          <option value="Robotics">Robotics</option>
+          <option value="Testing">Testing</option>
+        </select>
+        <div id="goal">
+          <label>Willing to work from home</label>
+          <input type="radio" name=" " />Yes <input type="radio" name=" " />No
+        </div>
+        <div id="in">
+          <label>Interests</label><br />
+          <input type="checkbox" name="Goal" /> Top Management <br />
+          <input type="checkbox" name="Goal" /> Marketing Department <br />
+          <input type="checkbox" name="Goal" /> Design Department <br />
+          <input type="checkbox" name="Goal" /> Financial Department <br />
+          <input type="checkbox" name="Goal" /> Supply Department
+        </div>
+        <div id="field">
+          <label>Fields</label><br />
+          <input type="radio" name=" " />News <br />
+          <input type="radio" name=" " />Reports <br />
+          <input type="radio" name=" " />Documents<br />
+          <input type="radio" name=" " />Media <br />
+          <input type="radio" name=" " />Text
+        </div>
+        <div>
+          <input type="button" class="submitBtn" value="Add to List" name=" " />
+        </div>
+        <input type="button" value="Clear Form" name=" " />
+      </form>
+    </div>
+    <table id="add">
+      <th>
+        <td></td>
+      </th>
+      <tr>
+        <td>First Name</td>
+        <td>Last Name</td>
+        <td>Occupation</td>
+        <td>Interests</td>
+        <td>Willing to WFH</td>
+        <td>Fields</td>
+        <td>Actions</td>
+      </tr>
+    </table>
   </body>
+  <script src="script.js"></script>
 </html>
