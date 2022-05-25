@@ -1,20 +1,21 @@
-const getCookie = (name) => {
-  return document.cookie.split(';').some((c) => {
-    return c.trim().startsWith(name + '=');
+document.getElementById('title').innerHTML = 'Promise';
+
+var promise = new Promise((resolve, reject) => {
+  setInterval(() => {
+    resolve('foo');
+  }, 1000);
+});
+
+promise
+  .then((successMsg) => {
+    console.log('success1', successMsg);
+  })
+  .then((successMsg) => {
+    console.log('success1', successMsg);
+  })
+  .then((successMsg) => {
+    console.log('success1', successMsg);
+  })
+  .catch((error) => {
+    console.log('errormsg', error);
   });
-};
-const deleteCookie = (name, path, domain) => {
-  if (getCookie(name)) {
-    document.cookie =
-      name +
-      '=' +
-      (path ? ';path=' + path : '') +
-      (domain ? ';domain=' + domain : '') +
-      ';expires=Thu, 01 Jan 1970 00:00:01 GMT';
-  }
-};
-document.cookie = 'xyz=abc;';
-document.cookie = 'abc=abc;';
-document.cookie = 'foo=abc;';
-document.cookie = 'bar=abc;';
-//deleteCookie('foo');
