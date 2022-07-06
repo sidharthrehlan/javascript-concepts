@@ -1,3 +1,29 @@
 .container {
   margin: 2em;
 }
+.grid-container {
+  display: grid;
+  font-size: 4em;
+  grid-template-columns: 1fr min-content;
+}
+.item:nth-child(2n) {
+  background-color: aqua;
+}
+.item:nth-child(2n + 1) {
+  background-color: orange;
+}
+.item {
+  border: brown 3px solid;
+}
+.item-1 {
+}
+.item-2 {
+}
+.item-3 {
+}
+.item-4 {
+}
+.item-5 {
+}
+.item-6 {
+}
